@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ComboPDF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ComboPDF" Height="450" Width="600">
     <Grid>
-
+        <TextBox Name="file1TextBox" HorizontalAlignment="Left" Margin="133,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284"/>
+        <TextBox Name="file2TextBox" HorizontalAlignment="Left" Margin="133,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284"/>
+        <TextBox Name="outputPathTextBox" HorizontalAlignment="Left" Margin="133,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284"/>
+        <TextBox Name="outputNameTextBox" HorizontalAlignment="Left" Margin="133,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284"/>
+        <Button Name="mergeBtn" Content="Merge" HorizontalAlignment="Center" Margin="0,305,0,0" VerticalAlignment="Top" Click="MergeBtn_Click" Height="45" Width="124"/>
+        <Button x:Name="browseFile1Btn" Content="Browse" HorizontalAlignment="Left" Margin="467,59,0,0" VerticalAlignment="Top" Click="browseFile1Btn_Click"/>
+        <Button x:Name="browseFile2Btn" Content="Browse" HorizontalAlignment="Left" Margin="467,119,0,0" VerticalAlignment="Top" Click="browseFile2Btn_Click"/>
+        <Button x:Name="browseOutputPathBtn" Content="Browse" HorizontalAlignment="Left" Margin="467,166,0,0" VerticalAlignment="Top" Click="browseOutputPathBtn_Click"/>
+        <Label Content="File 1" HorizontalAlignment="Left" Margin="28,53,0,0" VerticalAlignment="Top"/>
+        <Label Content="File 2" HorizontalAlignment="Left" Margin="28,113,0,0" VerticalAlignment="Top"/>
+        <Label Content="Output Path" HorizontalAlignment="Left" Margin="28,162,0,0" VerticalAlignment="Top"/>
+        <Label Content="Output Name" HorizontalAlignment="Left" Margin="28,208,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
